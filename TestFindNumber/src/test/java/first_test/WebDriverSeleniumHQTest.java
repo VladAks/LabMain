@@ -42,9 +42,7 @@ public class WebDriverSeleniumHQTest {
 
         WebElement serchIput3 = new WebDriverWait(driver, Duration.ofSeconds(2000))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='phones__list']/li")));
-        String flag;
         Assert.assertFalse(serchIput3.getText().isEmpty(),"results are empty!");
-        flag =serchIput3.getText();
         driver.quit();
 
     }
