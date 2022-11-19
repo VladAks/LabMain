@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcb9d601-653c-477d-b423-4c41da488bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/first_test/WebDriverSeleniumHQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/first_test/WebDriverSeleniumHQTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/first_test/WebDriverSeleniumHQTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/first_test/WebDriverSeleniumHQTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test2Java/meet-a-stranger" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test2Java/meet-a-stranger" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TestFindNumber/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TestFindNumber/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TestFindNumber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TestFindNumber/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,7 +44,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Git/LabMain/TestFindNumber",
+    "last_opened_file_path": "D:/Git/LabMain/9/TestFindNumber V2",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
