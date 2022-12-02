@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcb9d601-653c-477d-b423-4c41da488bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../9/TestFindNumber V2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../9/TestFindNumber V2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../9/TestFindNumber V2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../9/TestFindNumber V2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test2Java/meet-a-stranger" beforeDir="false" afterPath="$PROJECT_DIR$/../Test2Java/meet-a-stranger" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/first_test/WebDriverSeleniumHQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/first_test/WebDriverSeleniumHQTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/first_test/WebDriverSeleniumHQTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/first_test/WebDriverSeleniumHQTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Git/LabMain/9/TestFindNumber V2",
+    "last_opened_file_path": "D:/Git/LabMain/TestFindNumber",
     "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
