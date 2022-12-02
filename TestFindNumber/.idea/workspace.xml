@@ -42,9 +42,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Git/LabMain/TestFindNumber",
+    "last_opened_file_path": "D:/1/LabMain/TestFindNumber",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
@@ -53,10 +60,27 @@
       <recent name="first_test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WebDriverSeleniumHQTest.commonSearchTermReResultsNotEmpty">
+  <component name="RunManager" selected="TestNG.WebDriverSeleniumHQTest">
     <configuration name="HelloWebDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelloWebDriver" />
       <module name="Hello-WebDriver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebDriverSeleniumHQTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestFindNumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="first_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="first_test" />
+      <option name="MAIN_CLASS_NAME" value="first_test.WebDriverSeleniumHQTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WebDriverSeleniumHQTest" />
         <item itemvalue="TestNG.WebDriverSeleniumHQTest.commonSearchTermReResultsNotEmpty" />
         <item itemvalue="Application.HelloWebDriver" />
       </list>
