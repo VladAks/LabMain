@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcb9d601-653c-477d-b423-4c41da488bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobject_model/test/AvTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HelloWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelloWebDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/first_test/WebDriverSeleniumHQTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/first_test/WebDriverSeleniumHQTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/first_test/WebDriverSeleniumHQTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/first_test/WebDriverSeleniumHQTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HelloWebDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/first_test/WebDriverSeleniumHQTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,36 +44,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/1/LabMain/TestFindNumber&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/3 курс/UnitTestProject",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\LabMain\TestFindNumber\target" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageobject_model.test" />
       <recent name="first_test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WebDriverSeleniumHQTest.commonSearchTermReResultsNotEmpty">
-    <configuration name="HelloWebDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AvTest">
+    <configuration name="HelloWebDriver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelloWebDriver" />
-      <module name="TestFindNumber" />
+      <module name="Hello-WebDriver" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebDriverSeleniumHQTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestFindNumber" />
+    <configuration name="AvTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hello-WebDriver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pageobject_model.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pageobject_model.test" />
+      <option name="MAIN_CLASS_NAME" value="pageobject_model.test.AvTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AvTest.SearchTermNumberInThePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hello-WebDriver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pageobject_model.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pageobject_model.test" />
+      <option name="MAIN_CLASS_NAME" value="pageobject_model.test.AvTest" />
+      <option name="METHOD_NAME" value="SearchTermNumberInThePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebDriverSeleniumHQTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Hello-WebDriver" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="first_test.*" />
@@ -105,9 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AvTest" />
+        <item itemvalue="TestNG.AvTest.SearchTermNumberInThePage" />
+        <item itemvalue="Application.HelloWebDriver (1)" />
+        <item itemvalue="TestNG.WebDriverSeleniumHQTest (1)" />
         <item itemvalue="TestNG.WebDriverSeleniumHQTest.commonSearchTermReResultsNotEmpty" />
-        <item itemvalue="Application.HelloWebDriver" />
-        <item itemvalue="TestNG.WebDriverSeleniumHQTest" />
       </list>
     </recent_temporary>
   </component>
@@ -132,5 +178,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/pageobject_model/test/AvTest.java</url>
+          <line>37</line>
+          <properties class="pageobject_model.test.AvTest" method="SearchTermNumberInThePage">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TestFindNumber$AvTest_SearchTermNumberInThePage.ic" NAME="AvTest.SearchTermNumberInThePage Coverage Results" MODIFIED="1670447154738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pageobject_model.test.*</FILTER>
+    </SUITE>
   </component>
 </project>
