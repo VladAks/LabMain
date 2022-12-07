@@ -13,7 +13,7 @@ import java.time.Duration;
 public class AdsPage {
     private WebDriver driver;
     @FindBy(
-            xpath = "//*[@class='listing-item__link'][1]"
+            xpath = "//*[@class='listing-item__title']"
     )
     private WebElement SerchFistElements;
     @FindBy(
