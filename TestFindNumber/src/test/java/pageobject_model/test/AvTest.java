@@ -22,6 +22,7 @@ public class AvTest {
     )
     public void browserSetup() {
         this.driver = new ChromeDriver();
+        this.driver.manage().window().maximize();
         this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
