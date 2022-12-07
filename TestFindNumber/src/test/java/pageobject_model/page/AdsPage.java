@@ -20,11 +20,15 @@ public class AdsPage {
             xpath = "//*[@class='button__text' and text()='Показать телефон']"
     )
     private WebElement SerchPhoneNumber;
+
     @FindBy(
             xpath = "//*[@class='phones__list']/li"
     )
     private WebElement LiOfNumber;
-
+    @FindBy(
+            xpath = "//button[@class='button button--primary button--large button--block button button--primary']"
+    )
+    private WebElement Cookie;
     public AdsPage(WebDriver driver) {
         this.driver = driver;
         new WebDriverWait(this.driver, Duration.ofMillis(50L));
@@ -33,6 +37,12 @@ public class AdsPage {
     public AdsPage ClickForFistAds() {
 
         driver.findElement(By.xpath("//*[@class='listing-item__link'][1]")).click();
+        return this;
+    }
+    public AdsPage ClickCook() {
+
+        new WebDriverWait(this.driver, Duration.ofMillis(50L));
+        this.Cookie.click();
         return this;
     }
     public AdsPage ClickToShowNumberButton() {

@@ -22,7 +22,7 @@ public class AvTest {
             alwaysRun = true
     )
     public void browserSetup() {
-        this.driver = new EdgeDriver();
+        this.driver = new ChromeDriver();
         this.driver.manage().window().maximize();
         this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
@@ -43,6 +43,7 @@ public class AvTest {
                .openPage( "http://av.by")
                .ClickToCloseButton()
                .OpenAdsPage()
+               .ClickCook()
                .ClickForFistAds()
                        .ClickToShowNumberButton()
                                .GetTextInListNumber();
