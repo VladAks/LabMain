@@ -2,6 +2,7 @@ package pageobject_model.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,7 +22,7 @@ public class AvTest {
             alwaysRun = true
     )
     public void browserSetup() {
-        this.driver = new ChromeDriver();
+        this.driver = new EdgeDriver();
         this.driver.manage().window().maximize();
         this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }

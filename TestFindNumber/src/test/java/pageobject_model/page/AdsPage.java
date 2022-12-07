@@ -36,6 +36,7 @@ public class AdsPage {
         return this;
     }
     public AdsPage ClickToShowNumberButton() {
+
         new WebDriverWait(this.driver, Duration.ofMillis(50L));
         this.SerchPhoneNumber.click();
         return this;
