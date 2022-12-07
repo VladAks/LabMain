@@ -32,7 +32,7 @@ public class AdsPage {
     }
     public AdsPage ClickForFistAds() {
 
-        this.SerchFistElements.click();
+        driver.findElement(By.xpath("//*[@class='listing-item__link'][1]")).click();
         return this;
     }
     public AdsPage ClickToShowNumberButton() {
