@@ -48,7 +48,24 @@ public class AvTest {
                        .ClickToShowNumberButton()
                                .GetTextInListNumber();
 
-        Assert.assertFalse(expectedSearchResultsNumber.isEmpty());
+        Assert.assertFalse(expectedSearchResultsNumber.isEmpty(),"Successful");
     }
+    @Test
 
+    public void AddCommentToAd() {
+        String Comment = "This!";
+        String Pass = "12345678w";
+        String Log = "snokv@mailto.plus";
+        String expectedSearchResultsNumber = new AvByHomePage(driver)
+                .openPage( "http://av.by")
+                .ClickToCloseButton()
+                .OpenAdsPage()
+                .ClickCook()
+                .ClickForFistAds()
+                .ClickToComment(Comment)
+                .Login(Log,Pass)
+                .GetTextInListComment();
+
+        Assert.assertFalse(expectedSearchResultsNumber==Comment,"Successful");
+    }
 }

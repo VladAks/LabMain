@@ -13,9 +13,13 @@ import java.time.Duration;
 public class AdsPage {
     private WebDriver driver;
     @FindBy(
-            xpath = "//*[@class='link-text' and text()='Ford']"
+            xpath = "//*[@class='link-text']"
     )
     private WebElement SerchFistElements;
+    @FindBy(
+            xpath = "//button[@class='card__actions-item']"
+    )
+    private WebElement ButtonComment;
     @FindBy(
             xpath = "//*[@class='button__text' and text()='Показать телефон']"
     )
@@ -25,10 +29,35 @@ public class AdsPage {
             xpath = "//*[@class='phones__list']/li"
     )
     private WebElement LiOfNumber;
+
     @FindBy(
             xpath = "//button[@class='button button--primary button--large button--block button button--primary']"
     )
     private WebElement Cookie;
+    @FindBy(
+            xpath = "//textarea[@class='dynamic-note__text']"
+    )
+    private WebElement textComment;
+    @FindBy(
+            xpath = "//button[@class='dynamic-note__save']"
+    )
+    private WebElement ButtonSaveComment;
+    @FindBy(
+            xpath = "//button[@aria-selected='false']"
+    )
+    private WebElement SwitchLogin;
+    @FindBy(
+            xpath =  "//input[@name='login']"
+    )
+    private WebElement Login;
+    @FindBy(
+            xpath = "//input[@name='password']"
+    )
+    private WebElement Pass;
+    @FindBy(
+            xpath = "//button[@class='button button--action']"
+    )
+    private WebElement LogIn;
     public AdsPage(WebDriver driver) {
         this.driver = driver;
         new WebDriverWait(this.driver, Duration.ofMillis(50L));
@@ -45,6 +74,23 @@ public class AdsPage {
         this.Cookie.click();
         return this;
     }
+
+    public AdsPage ClickToComment(String login){
+        new WebDriverWait(this.driver, Duration.ofMillis(50L));
+        this.ButtonComment.click();
+        textComment.sendKeys(login);
+        ButtonSaveComment.click();
+        return this;
+    }
+    public AdsPage Login(String login, String pass) {
+
+        new WebDriverWait(this.driver, Duration.ofMillis(50L));
+        this.SwitchLogin.click();
+        Login.sendKeys(login);
+        Pass.sendKeys(pass);
+        LogIn.click();
+        return this;
+    }
     public AdsPage ClickToShowNumberButton() {
 
         new WebDriverWait(this.driver, Duration.ofMillis(50L));
@@ -53,5 +99,8 @@ public class AdsPage {
     }
     public String GetTextInListNumber() {
         return LiOfNumber.getText();
+    }
+    public String GetTextInListComment() {
+        return textComment.getText();
     }
 }
