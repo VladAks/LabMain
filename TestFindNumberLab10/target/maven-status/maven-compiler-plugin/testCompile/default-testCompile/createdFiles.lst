@@ -1,0 +1,10 @@
+page\AdsPage.class
+test\CommonConditions.class
+service\UserCreator.class
+test\AvTest.class
+util\TestListener.class
+test\SearchTermNumberinPages.class
+service\TestDataReader.class
+page\AvByHomePage.class
+driver\DriverSingleton.class
+model\User.class

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-15T02:20:07 MSK" name="Command line suite" finished-at="2022-12-15T02:20:18 MSK" duration-ms="11332">
+    <groups>
+    </groups>
+    <test started-at="2022-12-15T02:20:07 MSK" name="Command line test" finished-at="2022-12-15T02:20:18 MSK" duration-ms="11332">
+      <class name="test.AvTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:07 MSK" name="setUp" finished-at="2022-12-15T02:20:08 MSK" duration-ms="1655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddCommentToAd()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:08 MSK" name="AddCommentToAd" finished-at="2022-12-15T02:20:13 MSK" duration-ms="4490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCommentToAd -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:13 MSK" name="stopBrowser" finished-at="2022-12-15T02:20:13 MSK" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:13 MSK" name="setUp" finished-at="2022-12-15T02:20:14 MSK" duration-ms="811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SearchTermNumberInThePage()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:14 MSK" name="SearchTermNumberInThePage" finished-at="2022-12-15T02:20:18 MSK" duration-ms="4067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTermNumberInThePage -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:18 MSK" name="stopBrowser" finished-at="2022-12-15T02:20:18 MSK" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- test.AvTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
