@@ -144,9 +144,6 @@ public class AdsPage  {
         ButtonSaveComment.click();
         return this;
     }
-    public void threadTest() throws InterruptedException {
-        Thread.sleep(2000);
-    }
 
     public AdsPage Login(User user)  {
 
@@ -158,7 +155,6 @@ public class AdsPage  {
         return this;
     }
     public AdsPage ClickToButtonForLogin() throws InterruptedException {
-        Thread.sleep(800);
         LogIn.sendKeys(Keys.ENTER);
         Thread.sleep(800);
         return this;
@@ -204,9 +200,13 @@ public class AdsPage  {
         logger.info(Mark);
         if (Mark.contains("Audi"))
         {
+            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
             return true;
         }
-        else return IsAudi;
+        else {
+            logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
+            return IsAudi;
+        }
     }
     public boolean SheckThreeMark() {
         boolean IsAudi = false;
@@ -229,8 +229,12 @@ public class AdsPage  {
         }
         if ((Audi != 0) && (BMW !=0) && (Mers != 0))
         {
+            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
             return true;
         }
-        else return IsAudi;
+        else {
+            logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
+            return IsAudi;
+        }
     }
 }

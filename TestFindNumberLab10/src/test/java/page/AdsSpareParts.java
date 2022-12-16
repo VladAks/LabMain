@@ -15,6 +15,7 @@ import java.time.Duration;
 
 public class AdsSpareParts {
     private WebDriver driver;
+    private final Logger logger = LogManager.getRootLogger();
     @FindBy(
             xpath = "//a[@href='/accessories/avtozvuk']"
     )
@@ -46,7 +47,9 @@ public class AdsSpareParts {
         SerchFistElements.click();
         ChangeParametrsForSerch.click();
         ChangeParametrsForNewAds.click();
-        if (StringUtils.containsAny(CheckDayOfPart.getText(),"1","2","2","4","5","6","7")) isNewDays = true;
+        if (StringUtils.containsAny(CheckDayOfPart.getText(),"1","2","2","4","5","6","7")) {
+            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
+            isNewDays = true;}
         return isNewDays;
     }
 }

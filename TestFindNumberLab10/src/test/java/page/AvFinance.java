@@ -54,7 +54,10 @@ public class AvFinance {
         InputTextArea.sendKeys("88000");
         logger.info(CheckSumOfLising.getText());
 
-        if (CheckSumOfLising.getText().contains("1989")) return true;
-        else return false;
+        if (CheckSumOfLising.getText().contains("1989")) {
+            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
+            return true;}
+        else { logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
+            return false;}
     }
 }

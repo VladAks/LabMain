@@ -51,8 +51,12 @@ public class AvCompany {
     public boolean CheckPriceCar() throws InterruptedException {
         sleep(1000);
 
-        if (Integer.parseInt(returnPriceOfCar.getText().substring(0,2))<30) return true;
-        else return false;
+        if (Integer.parseInt(returnPriceOfCar.getText().substring(0,2))<30) {
+            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
+            return true;}
+        else {
+            logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
+            return false;}
     }
 
 }
