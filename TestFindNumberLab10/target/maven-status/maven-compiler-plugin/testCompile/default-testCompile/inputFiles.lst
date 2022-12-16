@@ -1,10 +1,13 @@
-D:\Git\LabMain\TestFindNumberLab10\src\test\java\model\User.java
 D:\Git\LabMain\TestFindNumberLab10\src\test\java\page\AvByHomePage.java
 D:\Git\LabMain\TestFindNumberLab10\src\test\java\test\CommonConditions.java
-D:\Git\LabMain\TestFindNumberLab10\src\test\java\util\TestListener.java
 D:\Git\LabMain\TestFindNumberLab10\src\test\java\service\UserCreator.java
 D:\Git\LabMain\TestFindNumberLab10\src\test\java\test\AvTest.java
-D:\Git\LabMain\TestFindNumberLab10\src\test\java\driver\DriverSingleton.java
 D:\Git\LabMain\TestFindNumberLab10\src\test\java\test\SearchTermNumberinPages.java
-D:\Git\LabMain\TestFindNumberLab10\src\test\java\service\TestDataReader.java
+D:\Git\LabMain\TestFindNumberLab10\src\test\java\page\AvCompany.java
+D:\Git\LabMain\TestFindNumberLab10\src\test\java\page\AdsSpareParts.java
 D:\Git\LabMain\TestFindNumberLab10\src\test\java\page\AdsPage.java
+D:\Git\LabMain\TestFindNumberLab10\src\test\java\model\User.java
+D:\Git\LabMain\TestFindNumberLab10\src\test\java\util\TestListener.java
+D:\Git\LabMain\TestFindNumberLab10\src\test\java\page\AvFinance.java
+D:\Git\LabMain\TestFindNumberLab10\src\test\java\driver\DriverSingleton.java
+D:\Git\LabMain\TestFindNumberLab10\src\test\java\service\TestDataReader.java

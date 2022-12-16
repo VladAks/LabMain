@@ -4,6 +4,7 @@ import model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,9 +12,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
-public class AdsPage {
+public class AdsPage  {
     private final Logger logger = LogManager.getRootLogger();
+    public static void main(String args[]) throws InterruptedException{
+        Thread.sleep(1000);
+    }
     private WebDriver driver;
     @FindBy(
             xpath = "//*[@class='link-text']"
@@ -27,7 +32,10 @@ public class AdsPage {
             xpath = "//*[@class='button__text' and text()='Показать телефон']"
     )
     private WebElement SerchPhoneNumber;
-
+    @FindBy(
+            xpath = "//button[@class='card__actions-item' and @aria-pressed='true']"
+    )
+    private  WebElement CheckBookMark;
     @FindBy(
             xpath = "//*[@class='phones__list']/li"
     )
@@ -46,6 +54,14 @@ public class AdsPage {
     )
     private WebElement ButtonSaveComment;
     @FindBy(
+            xpath = "//div[@class='notification__box']"
+    )
+    private WebElement CheckComplain;
+    @FindBy(
+            xpath = "//span[@class='nav__link-text' and text()='Войти']"
+    )
+    private WebElement BottonLogin;
+    @FindBy(
             xpath = "//button[@aria-selected='false']"
     )
     private WebElement SwitchLogin;
@@ -60,7 +76,39 @@ public class AdsPage {
     @FindBy(
             xpath = "//button[@class='button button--action']"
     )
-    private WebElement LogIn;
+    private WebElement LogIn;//button[@class='button button--action']
+    @FindBy(
+            xpath = "//*[@class='listing-item__link'][1]"
+    )
+    private WebElement ListOfAds;
+    @FindBy(
+            xpath = "//span[@class='button__text' and text()='Пожаловаться…']"
+    )
+    private WebElement ButtonOfComplaint;
+    @FindBy(
+            xpath = "//*[@class='listing__items']"
+    )
+    private WebElement MoreListOfAds;
+    @FindBy(
+            xpath = "//button[@class='card__actions-item' and @title='Добавить в закладки']"
+    )
+    private WebElement ButtonBookmarks;
+    @FindBy(
+            xpath = "//*[@id=\"__next\"]/div[3]/main/div/div/div[1]/div[1]/div[2]/div/div/form/div/div[1]/div[8]/label/span"
+    )
+    private WebElement ButtonOther;
+    @FindBy(
+            xpath = "//span[@class='button__text' and text()='Отправить']"
+    )
+    private WebElement ButtonSebdComplaint;
+    @FindBy(
+            xpath = "//button[@class='button button--link'][3]"
+    )
+    private WebElement buttonSaveParametrs;
+    @FindBy(
+            xpath = "//div[@class='modal__title' and text()='Поиск сохранён']"
+    )
+    private WebElement CheckForSaveParametr;
     public AdsPage(WebDriver driver) {
         this.driver = driver;
         new WebDriverWait(this.driver, Duration.ofMillis(50L));
@@ -71,6 +119,14 @@ public class AdsPage {
         driver.findElement(By.xpath("//*[@class='listing-item__link'][1]")).click();
         return this;
     }
+    public boolean Complaint(){
+        ButtonOfComplaint.click();
+        ButtonOther.click();
+        ButtonSebdComplaint.click();
+        if (CheckComplain.isEnabled()) return true;
+        else return false;
+    }
+
     public AdsPage ClickCook() {
 
         new WebDriverWait(this.driver, Duration.ofMillis(50L));
@@ -85,15 +141,34 @@ public class AdsPage {
         ButtonSaveComment.click();
         return this;
     }
-    public AdsPage Login(User user) {
+    public void threadTest() throws InterruptedException {
+        Thread.sleep(2000);
+    }
 
-        new WebDriverWait(this.driver, Duration.ofMillis(50L));
+    public AdsPage Login(User user)  {
+
+        BottonLogin.click();
         this.SwitchLogin.click();
         Login.sendKeys(user.getUsername());
         Pass.sendKeys(user.getPassword());
-        LogIn.click();
         logger.info("Login performed! Successfully!");
         return this;
+    }
+    public AdsPage ClickToButtonForLogin(){
+        LogIn.sendKeys(Keys.ENTER);
+        return this;
+    }
+
+    public AdsPage AddToBookmarks(){
+        ButtonBookmarks.click();
+        return this;
+    }
+    public boolean SaveSerchParam(){
+        buttonSaveParametrs.click();
+        if (CheckForSaveParametr.isEnabled())
+        return true;
+        else
+        return false;
     }
     public AdsPage ClickToShowNumberButton() {
 
@@ -106,5 +181,47 @@ public class AdsPage {
     }
     public String GetTextInListComment() {
         return textComment.getText();
+    }
+    public  boolean SheckBookMarks(){
+
+        if (CheckBookMark.isEnabled())
+            return true;
+        else
+        return false;
+    }
+    public boolean SheckMark() {
+        boolean IsAudi = false;
+        String Mark = ListOfAds.getText();
+        logger.info(Mark);
+        if (Mark.contains("Audi"))
+        {
+            return true;
+        }
+        else return IsAudi;
+    }
+    public boolean SheckThreeMark() {
+        boolean IsAudi = false;
+        List<WebElement> MarkList = driver.findElements(By.xpath("//*[@class='listing-item__link']"));
+        int numberOfListElements = MarkList.size();
+        int Audi = 0;
+        int BMW = 0;
+        int Mers = 0;
+        for (int i = 0; i < numberOfListElements ; i++){
+            if (MarkList.get(i).getText().contains("Audi"))
+            {
+                Audi++;
+            } else  if (MarkList.get(i).getText().contains("BMW"))
+            {
+                BMW++;
+            }else  if (MarkList.get(i).getText().contains("Mercedes-Benz"))
+            {
+                Mers++;
+            }
+        }
+        if ((Audi != 0) && (BMW !=0) && (Mers != 0))
+        {
+            return true;
+        }
+        else return IsAudi;
     }
 }

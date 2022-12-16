@@ -1,33 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-15T02:20:07 MSK" name="Command line suite" finished-at="2022-12-15T02:20:18 MSK" duration-ms="11332">
+  <suite started-at="2022-12-17T01:31:48 MSK" name="Command line suite" finished-at="2022-12-17T01:32:39 MSK" duration-ms="50990">
     <groups>
     </groups>
-    <test started-at="2022-12-15T02:20:07 MSK" name="Command line test" finished-at="2022-12-15T02:20:18 MSK" duration-ms="11332">
+    <test started-at="2022-12-17T01:31:48 MSK" name="Command line test" finished-at="2022-12-17T01:32:39 MSK" duration-ms="50990">
       <class name="test.AvTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:07 MSK" name="setUp" finished-at="2022-12-15T02:20:08 MSK" duration-ms="1655" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:31:48 MSK" name="setUp" finished-at="2022-12-17T01:31:49 MSK" duration-ms="1583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddCommentToAd()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:08 MSK" name="AddCommentToAd" finished-at="2022-12-15T02:20:13 MSK" duration-ms="4490" status="PASS">
+        <test-method signature="AddCommentToAd()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:31:49 MSK" name="AddCommentToAd" finished-at="2022-12-17T01:31:54 MSK" duration-ms="4279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddCommentToAd -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:13 MSK" name="stopBrowser" finished-at="2022-12-15T02:20:13 MSK" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:31:54 MSK" name="stopBrowser" finished-at="2022-12-17T01:31:54 MSK" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:13 MSK" name="setUp" finished-at="2022-12-15T02:20:14 MSK" duration-ms="811" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:31:54 MSK" name="setUp" finished-at="2022-12-17T01:31:55 MSK" duration-ms="871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SearchTermNumberInThePage()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:14 MSK" name="SearchTermNumberInThePage" finished-at="2022-12-15T02:20:18 MSK" duration-ms="4067" status="PASS">
+        <test-method signature="BookmarkСars()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:31:55 MSK" name="BookmarkСars" finished-at="2022-12-17T01:32:00 MSK" duration-ms="5676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookmarkСars -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:00 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:00 MSK" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:00 MSK" name="setUp" finished-at="2022-12-17T01:32:01 MSK" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CheapAdsFromDriveMotors()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:01 MSK" name="CheapAdsFromDriveMotors" finished-at="2022-12-17T01:32:05 MSK" duration-ms="3893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheapAdsFromDriveMotors -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:05 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:05 MSK" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:05 MSK" name="setUp" finished-at="2022-12-17T01:32:06 MSK" duration-ms="740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="HowMuchPerMonthIsTheLeasingFee()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:06 MSK" name="HowMuchPerMonthIsTheLeasingFee" finished-at="2022-12-17T01:32:08 MSK" duration-ms="2281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HowMuchPerMonthIsTheLeasingFee -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:08 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:08 MSK" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:08 MSK" name="setUp" finished-at="2022-12-17T01:32:09 MSK" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SaveSerachParametrs()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:09 MSK" name="SaveSerachParametrs" finished-at="2022-12-17T01:32:13 MSK" duration-ms="4249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SaveSerachParametrs -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:13 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:13 MSK" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:13 MSK" name="setUp" finished-at="2022-12-17T01:32:14 MSK" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SearchAutoAudi()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:14 MSK" name="SearchAutoAudi" finished-at="2022-12-17T01:32:17 MSK" duration-ms="3097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchAutoAudi -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:17 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:17 MSK" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:17 MSK" name="setUp" finished-at="2022-12-17T01:32:18 MSK" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SearchAutoAudiAndBMWAndMercedes()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:18 MSK" name="SearchAutoAudiAndBMWAndMercedes" finished-at="2022-12-17T01:32:23 MSK" duration-ms="5080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchAutoAudiAndBMWAndMercedes -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:23 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:23 MSK" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:23 MSK" name="setUp" finished-at="2022-12-17T01:32:24 MSK" duration-ms="756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SearchTermNumberInThePage()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:24 MSK" name="SearchTermNumberInThePage" finished-at="2022-12-17T01:32:28 MSK" duration-ms="3587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchTermNumberInThePage -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@341b80b2]" started-at="2022-12-15T02:20:18 MSK" name="stopBrowser" finished-at="2022-12-15T02:20:18 MSK" duration-ms="134" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:28 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:28 MSK" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:28 MSK" name="setUp" finished-at="2022-12-17T01:32:29 MSK" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SerchNewAdsAutoSound()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:29 MSK" name="SerchNewAdsAutoSound" finished-at="2022-12-17T01:32:32 MSK" duration-ms="3732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SerchNewAdsAutoSound -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:32 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:32 MSK" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:32 MSK" name="setUp" finished-at="2022-12-17T01:32:33 MSK" duration-ms="749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="complaintForAds()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:33 MSK" name="complaintForAds" finished-at="2022-12-17T01:32:38 MSK" duration-ms="5254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- complaintForAds -->
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.AvTest@212bf671]" started-at="2022-12-17T01:32:38 MSK" name="stopBrowser" finished-at="2022-12-17T01:32:39 MSK" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
