@@ -155,9 +155,9 @@ public class AdsPage  {
         return this;
     }
     public AdsPage ClickToButtonForLogin() throws InterruptedException {
-        Thread.sleep(800);
+        Thread.sleep(1000);
         LogIn.sendKeys(Keys.ENTER);
-        Thread.sleep(800);
+        Thread.sleep(1000);
         return this;
     }
 
