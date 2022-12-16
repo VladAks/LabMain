@@ -124,7 +124,10 @@ public class AdsPage  {
         ButtonOther.click();
         ButtonSebdComplaint.click();
         if (CheckComplain.isEnabled()) return true;
-        else return false;
+        else {
+            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
+            return false;
+        }
     }
 
     public AdsPage ClickCook() {
@@ -155,8 +158,9 @@ public class AdsPage  {
         return this;
     }
     public AdsPage ClickToButtonForLogin() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(800);
         LogIn.sendKeys(Keys.ENTER);
+        Thread.sleep(800);
         return this;
     }
 
@@ -166,10 +170,14 @@ public class AdsPage  {
     }
     public boolean SaveSerchParam(){
         buttonSaveParametrs.click();
-        if (CheckForSaveParametr.isEnabled())
-        return true;
-        else
+        if (CheckForSaveParametr.isEnabled()){
+            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
+            return true;
+        }
+        else {
+            logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
         return false;
+        }
     }
     public AdsPage ClickToShowNumberButton() {
 

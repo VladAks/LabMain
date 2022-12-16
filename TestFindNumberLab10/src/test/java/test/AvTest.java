@@ -115,6 +115,7 @@ public class AvTest extends CommonConditions{
                 .SaveSerchParam();
 
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
+
     }
     @Test
     public void SerchNewAdsAutoSound(){
