@@ -17,5 +17,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Test with Maven
-      run: mvn -f TestFindNumberLab10/pom.xml test
+      run: mvn -f TestFindNumberLab10/pom.xml -Dbrowser=chrome -Denvironment=admin clean test
      
