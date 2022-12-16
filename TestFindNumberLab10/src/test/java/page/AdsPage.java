@@ -154,7 +154,8 @@ public class AdsPage  {
         logger.info("Login performed! Successfully!");
         return this;
     }
-    public AdsPage ClickToButtonForLogin(){
+    public AdsPage ClickToButtonForLogin() throws InterruptedException {
+        Thread.sleep(1000);
         LogIn.sendKeys(Keys.ENTER);
         return this;
     }

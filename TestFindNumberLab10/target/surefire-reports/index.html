@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="BookmarkСars">BookmarkСars</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,51 +115,6 @@
                       <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
                     <div class="method-list-content passed suite-Command_line_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="AddCommentToAd">AddCommentToAd</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="BookmarkСars">BookmarkСars</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="CheapAdsFromDriveMotors">CheapAdsFromDriveMotors</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="HowMuchPerMonthIsTheLeasingFee">HowMuchPerMonthIsTheLeasingFee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="SaveSerachParametrs">SaveSerachParametrs</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="SearchAutoAudi">SearchAutoAudi</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="SearchAutoAudiAndBMWAndMercedes">SearchAutoAudiAndBMWAndMercedes</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="SearchTermNumberInThePage">SearchTermNumberInThePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="SerchNewAdsAutoSound">SerchNewAdsAutoSound</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="test.AvTest" class="method navigator-link" hash-for-method="complaintForAds">complaintForAds</a> <!-- method navigator-link -->
@@ -163,75 +132,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.AvTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookmarkСars">
+                  </a> <!-- BookmarkСars -->
+                  <span class="method-name">BookmarkСars</span>
+                  <div class="stack-trace">java.lang.AssertionError: Successful expected [true] but found [false]
+	at test.AvTest.BookmarkСars(AvTest.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">test.AvTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AddCommentToAd">
-                  </a> <!-- AddCommentToAd -->
-                  <span class="method-name">AddCommentToAd</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="BookmarkСars">
-                  </a> <!-- BookmarkСars -->
-                  <span class="method-name">BookmarkСars</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="CheapAdsFromDriveMotors">
-                  </a> <!-- CheapAdsFromDriveMotors -->
-                  <span class="method-name">CheapAdsFromDriveMotors</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="HowMuchPerMonthIsTheLeasingFee">
-                  </a> <!-- HowMuchPerMonthIsTheLeasingFee -->
-                  <span class="method-name">HowMuchPerMonthIsTheLeasingFee</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SaveSerachParametrs">
-                  </a> <!-- SaveSerachParametrs -->
-                  <span class="method-name">SaveSerachParametrs</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchAutoAudi">
-                  </a> <!-- SearchAutoAudi -->
-                  <span class="method-name">SearchAutoAudi</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchAutoAudiAndBMWAndMercedes">
-                  </a> <!-- SearchAutoAudiAndBMWAndMercedes -->
-                  <span class="method-name">SearchAutoAudiAndBMWAndMercedes</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchTermNumberInThePage">
-                  </a> <!-- SearchTermNumberInThePage -->
-                  <span class="method-name">SearchTermNumberInThePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SerchNewAdsAutoSound">
-                  </a> <!-- SerchNewAdsAutoSound -->
-                  <span class="method-name">SerchNewAdsAutoSound</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="complaintForAds">
@@ -294,52 +220,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'BookmarkСars')
 data.setCell(0, 2, 'test.AvTest')
-data.setCell(0, 3, 5676);
+data.setCell(0, 3, 8034);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'complaintForAds')
 data.setCell(1, 2, 'test.AvTest')
-data.setCell(1, 3, 5254);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SearchAutoAudiAndBMWAndMercedes')
-data.setCell(2, 2, 'test.AvTest')
-data.setCell(2, 3, 5080);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AddCommentToAd')
-data.setCell(3, 2, 'test.AvTest')
-data.setCell(3, 3, 4279);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'SaveSerachParametrs')
-data.setCell(4, 2, 'test.AvTest')
-data.setCell(4, 3, 4249);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'CheapAdsFromDriveMotors')
-data.setCell(5, 2, 'test.AvTest')
-data.setCell(5, 3, 3893);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'SerchNewAdsAutoSound')
-data.setCell(6, 2, 'test.AvTest')
-data.setCell(6, 3, 3732);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'SearchTermNumberInThePage')
-data.setCell(7, 2, 'test.AvTest')
-data.setCell(7, 3, 3587);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'SearchAutoAudi')
-data.setCell(8, 2, 'test.AvTest')
-data.setCell(8, 3, 3097);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'HowMuchPerMonthIsTheLeasingFee')
-data.setCell(9, 2, 'test.AvTest')
-data.setCell(9, 3, 2281);
+data.setCell(1, 3, 4875);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -371,120 +265,26 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">AddCommentToAd</span>
-                <span class="method-start">1583 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">5863 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">5996 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">BookmarkСars</span>
-                <span class="method-start">6867 ms</span>
+                <span class="method-start">1619 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">12543 ms</span>
+                <span class="method-start">9993 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">12700 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">CheapAdsFromDriveMotors</span>
-                <span class="method-start">13438 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">17331 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">17498 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">HowMuchPerMonthIsTheLeasingFee</span>
-                <span class="method-start">18238 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">20519 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">20645 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SaveSerachParametrs</span>
-                <span class="method-start">21398 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">25648 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">25772 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchAutoAudi</span>
-                <span class="method-start">26527 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">29624 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">29746 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchAutoAudiAndBMWAndMercedes</span>
-                <span class="method-start">30497 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">35577 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">35732 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchTermNumberInThePage</span>
-                <span class="method-start">36488 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">40076 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">40217 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SerchNewAdsAutoSound</span>
-                <span class="method-start">40939 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">44671 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">44796 ms</span>
+                <span class="method-start">10128 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">complaintForAds</span>
-                <span class="method-start">45545 ms</span>
+                <span class="method-start">10882 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">50800 ms</span>
+                <span class="method-start">15757 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

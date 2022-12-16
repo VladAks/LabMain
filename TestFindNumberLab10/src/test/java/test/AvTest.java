@@ -72,7 +72,7 @@ public class AvTest extends CommonConditions{
     }
     @Test
 
-    public void BookmarkСars() {
+    public void BookmarkСars() throws InterruptedException {
         User testUser = UserCreator.withCredentialsFromProperty();
         Boolean expectedSearchResultsNumber = new AvByHomePage(driver)
                 .openPage(URL)
@@ -88,7 +88,7 @@ public class AvTest extends CommonConditions{
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
     }
    @Test
-    public void complaintForAds(){
+    public void complaintForAds() throws InterruptedException {
         User testUser = UserCreator.withCredentialsFromProperty();
         Boolean expectedSearchResultsNumber = new AvByHomePage(driver)
                 .openPage(URL)
@@ -103,7 +103,7 @@ public class AvTest extends CommonConditions{
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
     }
     @Test
-    public void SaveSerachParametrs(){
+    public void SaveSerachParametrs() throws InterruptedException {
         User testUser = UserCreator.withCredentialsFromProperty();
         boolean expectedSearchResultsNumber = new AvByHomePage(driver)
                 .openPage(URL)
