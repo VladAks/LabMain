@@ -163,6 +163,14 @@ public class AdsPage  {
         logger.info("Login performed! Successfully!");
         return this;
     }
+    public AdsPage LoginForSerch(User user)  {
+
+        this.SwitchLogin.click();
+        Login.sendKeys(user.getUsername());
+        Pass.sendKeys(user.getPassword());
+        logger.info("Login performed! Successfully!");
+        return this;
+    }
     public AdsPage LoginComment(User user)  {
 
         this.SwitchLogin.click();
@@ -189,19 +197,20 @@ public class AdsPage  {
 
 
     public boolean SaveSerchParam() throws InterruptedException {
-        Thread.sleep(1000);
-        return true;
-        //buttonSaveParametrs.click();
-        //Thread.sleep(1000);
-        //return true;
-        //if (CheckForSaveParametr.isEnabled()){
-            //logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
-            //return true;
-        //}
-        //else {
-            //logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
-        //return false;
-        //}
+
+        if (CheckForSaveParametr.isEnabled()){
+            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
+            return true;
+        }
+        else {
+            logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
+        return false;
+        }
+    }
+    public AdsPage ClickToSaveSerch() throws InterruptedException {
+
+        buttonSaveParametrs.click();
+        return this;
     }
     public AdsPage ClickToShowNumberButton() {
 
