@@ -90,9 +90,13 @@ public class AdsPage  {
     )
     private WebElement MoreListOfAds;
     @FindBy(
-            xpath = "//button[@class='card__actions-item' and @title='Добавить в закладки']"
+            xpath = "//button[@class='card__actions-item' and @aria-pressed='false' and @title='Добавить в закладки']"
     )
     private WebElement ButtonBookmarks;
+    @FindBy(
+            xpath = "//button[@class='card__actions-item' and @aria-pressed='true' and @title='Убрать из закладок']"
+    )
+    private WebElement ButtonBookmarksTrue;
     @FindBy(
             xpath = "//*[@id=\"__next\"]/div[3]/main/div/div/div[1]/div[1]/div[2]/div/div/form/div/div[1]/div[8]/label/span"
     )
@@ -117,6 +121,11 @@ public class AdsPage  {
     public AdsPage ClickForFistAds() {
 
         driver.findElement(By.xpath("//*[@class='listing-item__link'][1]")).click();
+        return this;
+    }
+    public AdsPage ClickForThecondAds() {
+
+        driver.findElement(By.xpath("//*[@class='listing-item__link'][2]")).click();
         return this;
     }
     public boolean Complaint(){
@@ -154,6 +163,14 @@ public class AdsPage  {
         logger.info("Login performed! Successfully!");
         return this;
     }
+    public AdsPage LoginComment(User user)  {
+
+        this.SwitchLogin.click();
+        Login.sendKeys(user.getUsername());
+        Pass.sendKeys(user.getPassword());
+        logger.info("Login performed! Successfully!");
+        return this;
+    }
     public AdsPage ClickToButtonForLogin() throws InterruptedException {
         Thread.sleep(1000);
         LogIn.sendKeys(Keys.ENTER);
@@ -161,9 +178,13 @@ public class AdsPage  {
         return this;
     }
 
-    public AdsPage AddToBookmarks(){
-        ButtonBookmarks.click();
-        return this;
+    public AdsPage AddToBookmarks() throws InterruptedException {
+
+        if (ButtonBookmarksTrue.isEnabled()) { ButtonBookmarksTrue.click();  Thread.sleep(400);  ButtonBookmarks.click();        Thread.sleep(400); return this;}
+        else { ButtonBookmarks.click();  Thread.sleep(400); return this;
+        }
+
+
     }
     public boolean SaveSerchParam(){
         buttonSaveParametrs.click();

@@ -12,7 +12,7 @@ public class AvTest extends CommonConditions{
     private static final String URL ="http://av.by";
     @Test
 
-    public void AddCommentToAd() {
+    public void AddCommentToAd() throws InterruptedException {
         String Comment = "This!";
         User testUser = UserCreator.withCredentialsFromProperty();
         String expectedSearchResultsNumber = new AvByHomePage(driver)
@@ -22,7 +22,8 @@ public class AvTest extends CommonConditions{
                 .ClickCook()
                 .ClickForFistAds()
                 .ClickToComment(Comment)
-                .Login(testUser)
+                .LoginComment(testUser)
+                .ClickToButtonForLogin()
                 .GetTextInListComment();
 
         Assert.assertFalse(expectedSearchResultsNumber==Comment,"Successful");
@@ -44,7 +45,7 @@ public class AvTest extends CommonConditions{
         Assert.assertFalse(expectedSearchResultsNumber.isEmpty(),"Successful");
     }
 
-   @Test
+    @Test
 
     public void SearchAutoAudi() {
 
@@ -87,7 +88,7 @@ public class AvTest extends CommonConditions{
 
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
     }
-   @Test
+    @Test
     public void complaintForAds() throws InterruptedException {
         User testUser = UserCreator.withCredentialsFromProperty();
         Boolean expectedSearchResultsNumber = new AvByHomePage(driver)
