@@ -82,7 +82,7 @@ public class AdsPage  {
     )
     private WebElement ListOfAds;
     @FindBy(
-            xpath = "//button[@class='button button--xlink']/span[text()]"
+            xpath = "//*[@id='__next']/div[3]/main/div/div/div[1]/div[1]/div[3]/div[1]/div[2]/p/button/span"
     )
     private WebElement ButtonOfComplaint;
     @FindBy(
@@ -98,7 +98,7 @@ public class AdsPage  {
     )
     private WebElement ButtonBookmarksTrue;
     @FindBy(
-            xpath = "//*[@id=\"__next\"]/div[3]/main/div/div/div[1]/div[1]/div[2]/div/div/form/div/div[1]/div[8]/label/span"
+            xpath = "//*[@id='__next']/div[3]/main/div/div/div[1]/div[1]/div[2]/div/div/form/div/div[1]/div[8]/label/span"
     )
     private WebElement ButtonOther;
     @FindBy(
@@ -187,11 +187,11 @@ public class AdsPage  {
     }
 
     public AdsPage AddToBookmarks() throws InterruptedException {
-
-        if (ButtonBookmarks.isEnabled())
-        { ButtonBookmarks.click();  Thread.sleep(400); return this;}
+        Thread.sleep(800);
+        if (ButtonBookmarksTrue.isEnabled())
+        {ButtonBookmarksTrue.click();  Thread.sleep(400);  ButtonBookmarks.click();    Thread.sleep(400); return this;}
         else {
-            ButtonBookmarksTrue.click();  Thread.sleep(400);  ButtonBookmarks.click();    Thread.sleep(400); return this;}
+             ButtonBookmarks.click();  Thread.sleep(400); return this;}
 
     }
 

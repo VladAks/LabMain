@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="TestSuite" time="66.742" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="TestSuite" time="54.258" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.5+9-LTS-191"/>
@@ -63,14 +63,14 @@
     <property name="sun.stdout.encoding" value="cp866"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.AvTest" name="AddCommentToAd" time="6.423"/>
-  <testcase classname="test.AvTest" name="BookmarkСars" time="22.353"/>
-  <testcase classname="test.AvTest" name="CheapAdsFromDriveMotors" time="3.97"/>
-  <testcase classname="test.AvTest" name="HowMuchPerMonthIsTheLeasingFee" time="2.198"/>
-  <testcase classname="test.AvTest" name="SaveSerachParametrs" time="7"/>
-  <testcase classname="test.AvTest" name="SearchAutoAudi" time="4.26"/>
-  <testcase classname="test.AvTest" name="SearchAutoAudiAndBMWAndMercedes" time="5.614"/>
-  <testcase classname="test.AvTest" name="SearchTermNumberInThePage" time="4.617"/>
-  <testcase classname="test.AvTest" name="SerchNewAdsAutoSound" time="3.909"/>
-  <testcase classname="test.AvTest" name="complaintForAds" time="6.398"/>
+  <testcase classname="test.AvTest" name="AddCommentToAd" time="6.955"/>
+  <testcase classname="test.AvTest" name="BookmarkСars" time="8.443"/>
+  <testcase classname="test.AvTest" name="CheapAdsFromDriveMotors" time="4.102"/>
+  <testcase classname="test.AvTest" name="HowMuchPerMonthIsTheLeasingFee" time="2.341"/>
+  <testcase classname="test.AvTest" name="SaveSerachParametrs" time="6.453"/>
+  <testcase classname="test.AvTest" name="SearchAutoAudi" time="3.944"/>
+  <testcase classname="test.AvTest" name="SearchAutoAudiAndBMWAndMercedes" time="5.401"/>
+  <testcase classname="test.AvTest" name="SearchTermNumberInThePage" time="5.603"/>
+  <testcase classname="test.AvTest" name="SerchNewAdsAutoSound" time="3.872"/>
+  <testcase classname="test.AvTest" name="complaintForAds" time="7.144"/>
 </testsuite>
