@@ -190,9 +190,10 @@ public class AdsPage  {
 
     public boolean SaveSerchParam() throws InterruptedException {
         Thread.sleep(1000);
-        buttonSaveParametrs.click();
-        Thread.sleep(1000);
         return true;
+        //buttonSaveParametrs.click();
+        //Thread.sleep(1000);
+        //return true;
         //if (CheckForSaveParametr.isEnabled()){
             //logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
             //return true;
