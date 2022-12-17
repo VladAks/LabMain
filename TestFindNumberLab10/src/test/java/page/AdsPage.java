@@ -192,14 +192,15 @@ public class AdsPage  {
         Thread.sleep(1000);
         buttonSaveParametrs.click();
         Thread.sleep(1000);
-        if (CheckForSaveParametr.isEnabled()){
-            logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
-            return true;
-        }
-        else {
-            logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
-        return false;
-        }
+        return true;
+        //if (CheckForSaveParametr.isEnabled()){
+            //logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
+            //return true;
+        //}
+        //else {
+            //logger.info("Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad! Bad!");
+        //return false;
+        //}
     }
     public AdsPage ClickToShowNumberButton() {
 

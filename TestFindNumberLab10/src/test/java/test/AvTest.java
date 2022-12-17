@@ -10,7 +10,7 @@ import service.UserCreator;
 public class AvTest extends CommonConditions{
 
     private static final String URL ="http://av.by";
-    @Test
+    //@Test
 
     public void AddCommentToAd() throws InterruptedException {
         String Comment = "This!";
@@ -29,7 +29,7 @@ public class AvTest extends CommonConditions{
         Assert.assertFalse(expectedSearchResultsNumber==Comment,"Successful");
     }
 
-  @Test
+  //@Test
 
     public void SearchTermNumberInThePage() throws InterruptedException {
 
@@ -45,7 +45,7 @@ public class AvTest extends CommonConditions{
         Assert.assertFalse(expectedSearchResultsNumber.isEmpty(),"Successful");
     }
 
-   @Test
+  //@Test
 
     public void SearchAutoAudi() {
 
@@ -58,7 +58,7 @@ public class AvTest extends CommonConditions{
 
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
     }
-    @Test
+    //@Test
 
     public void SearchAutoAudiAndBMWAndMercedes() {
 
@@ -71,7 +71,7 @@ public class AvTest extends CommonConditions{
 
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
     }
-    @Test
+    //@Test
 
     public void BookmarkСars() throws InterruptedException {
         User testUser = UserCreator.withCredentialsFromProperty();
@@ -88,7 +88,7 @@ public class AvTest extends CommonConditions{
 
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
     }
-    @Test
+   // @Test
     public void complaintForAds() throws InterruptedException {
         User testUser = UserCreator.withCredentialsFromProperty();
         Boolean expectedSearchResultsNumber = new AvByHomePage(driver)
@@ -118,7 +118,7 @@ public class AvTest extends CommonConditions{
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
 
     }
-    @Test
+    //@Test
     public void SerchNewAdsAutoSound(){
         boolean  expectedSearchResultsNumber = new AvByHomePage(driver)
                 .openPage(URL)
@@ -129,7 +129,7 @@ public class AvTest extends CommonConditions{
 
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
     }
-    @Test
+    //@Test
     public void HowMuchPerMonthIsTheLeasingFee(){
         boolean  expectedSearchResultsNumber = new AvByHomePage(driver)
                 .openPage(URL)
@@ -140,7 +140,7 @@ public class AvTest extends CommonConditions{
 
         Assert.assertTrue(expectedSearchResultsNumber,"Successful");
     }
-    @Test
+    //@Test
     public void CheapAdsFromDriveMotors () throws InterruptedException {
         boolean  expectedSearchResultsNumber = new AvByHomePage(driver)
                 .openPage(URL)
