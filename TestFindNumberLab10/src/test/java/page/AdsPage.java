@@ -82,7 +82,7 @@ public class AdsPage  {
     )
     private WebElement ListOfAds;
     @FindBy(
-            xpath = "//span[@class='button__text' and text()='Пожаловаться…']"
+            xpath = "//button[@class='button button--xlink']/span[text()]"
     )
     private WebElement ButtonOfComplaint;
     @FindBy(
@@ -184,12 +184,14 @@ public class AdsPage  {
         { ButtonBookmarks.click();  Thread.sleep(400); return this;}
         else {
             ButtonBookmarksTrue.click();  Thread.sleep(400);  ButtonBookmarks.click();    Thread.sleep(400); return this;}
-        
+
     }
 
 
-    public boolean SaveSerchParam(){
+    public boolean SaveSerchParam() throws InterruptedException {
+        Thread.sleep(1000);
         buttonSaveParametrs.click();
+        Thread.sleep(1000);
         if (CheckForSaveParametr.isEnabled()){
             logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
             return true;
@@ -205,7 +207,8 @@ public class AdsPage  {
         this.SerchPhoneNumber.click();
         return this;
     }
-    public String GetTextInListNumber() {
+    public String GetTextInListNumber() throws InterruptedException {
+        Thread.sleep(800);
         return LiOfNumber.getText();
     }
     public String GetTextInListComment() {
