@@ -33,9 +33,10 @@ public class AdsPage  {
     )
     private WebElement SerchPhoneNumber;
     @FindBy(
-            xpath = "//button[@class='card__actions-item' and @aria-pressed='true']"
+            xpath = "//button[@title='Убрать из закладок' and @aria-pressed='true']"
     )
     private  WebElement CheckBookMark;
+
     @FindBy(
             xpath = "//*[@class='phones__list']/li"
     )
