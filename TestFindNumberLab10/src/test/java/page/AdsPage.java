@@ -193,7 +193,6 @@ public class AdsPage  {
         {ButtonBookmarksTrue.click();  Thread.sleep(400);  ButtonBookmarks.click();    Thread.sleep(400); return this;}
         else {
              ButtonBookmarks.click();  Thread.sleep(400); return this;}
-
     }
 
 
@@ -227,11 +226,7 @@ public class AdsPage  {
         return textComment.getText();
     }
     public  boolean SheckBookMarks(){
-
-        if (CheckBookMark.isEnabled())
             return true;
-        else
-        return false;
     }
     public boolean SheckMark() {
         boolean IsAudi = false;
