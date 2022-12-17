@@ -110,7 +110,7 @@ public class AdsPage  {
     )
     private WebElement buttonSaveParametrs;
     @FindBy(
-            xpath = "//div[@class='modal__title' and text()='Поиск сохранён']"
+            xpath = "//*[@id='modal-root']/div[8]/div/div/div/div/div/div[1]"
     )
     private WebElement CheckForSaveParametr;
     public AdsPage(WebDriver driver) {
@@ -197,7 +197,7 @@ public class AdsPage  {
 
 
     public boolean SaveSerchParam() throws InterruptedException {
-
+        Thread.sleep(500);
         if (CheckForSaveParametr.isEnabled()){
             logger.info("OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK! OK!");
             return true;
