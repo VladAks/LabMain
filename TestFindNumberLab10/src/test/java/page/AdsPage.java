@@ -184,10 +184,10 @@ public class AdsPage  {
         { ButtonBookmarks.click();  Thread.sleep(400); return this;}
         else {
             ButtonBookmarksTrue.click();  Thread.sleep(400);  ButtonBookmarks.click();    Thread.sleep(400); return this;}
-        }
-
-
+        
     }
+
+
     public boolean SaveSerchParam(){
         buttonSaveParametrs.click();
         if (CheckForSaveParametr.isEnabled()){
