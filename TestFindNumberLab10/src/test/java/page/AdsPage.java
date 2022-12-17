@@ -180,8 +180,10 @@ public class AdsPage  {
 
     public AdsPage AddToBookmarks() throws InterruptedException {
 
-        if (ButtonBookmarksTrue.isEnabled()) { ButtonBookmarksTrue.click();  Thread.sleep(400);  ButtonBookmarks.click();        Thread.sleep(400); return this;}
-        else { ButtonBookmarks.click();  Thread.sleep(400); return this;
+        if (ButtonBookmarks.isEnabled())
+        { ButtonBookmarks.click();  Thread.sleep(400); return this;}
+        else {
+            ButtonBookmarksTrue.click();  Thread.sleep(400);  ButtonBookmarks.click();    Thread.sleep(400); return this;}
         }
 
 
